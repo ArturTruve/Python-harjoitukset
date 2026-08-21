@@ -10,4 +10,8 @@ Tein tehtävät 1 ja 2.
 
 Tein tunnilla vaaditun esimerkin 
 
-Tehtävät 2, 3 ja 4 moduulista 3
+Tehtävät 2, 3, 4, 5 ja 6 valmiita
+
+Ohjelmointiprojektitehtävän aloitus tehty
+
+## Moduuli 4
