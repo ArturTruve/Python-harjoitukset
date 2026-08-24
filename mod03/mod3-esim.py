@@ -19,5 +19,20 @@ summa = str(summa)
 
 print("Lukujen " + str(luku) + " ja " + str(luku2) +" " + "summa on " + summa + ".")
 
-#uusi_kayttäjä = input("Anna nimesi:")
+uusi_kayttäjä = input("Anna nimesi:")
 #print("Hauska tavata, " + uusi_kayttäjä + "!")
+
+ikä = 21
+
+print(f"Hauska tavata {uusi_kayttäjä} ja ikäni on {ikä}!!!!!")
+
+pisteet = 200
+pisteet = 400
+print(pisteet)
+
+merkkijono = "ulla"
+#merkkijono = "9"
+#merkkijono = ""
+pisteet = 0
+
+print(f"Merkkijono: {merkkijono:<20s} sijoitetaan tähän väliin")
