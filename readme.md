@@ -10,7 +10,7 @@ Tein tehtävät 1 ja 2.
 
 Tein tunnilla vaaditun esimerkin 
 
-Tehtävät 2, 3, 4, 5 ja 6 valmiita
+Tehtävät 1, 2, 3, 4, 5 ja 6 valmiita
 
 Ohjelmointiprojektitehtävän aloitus tehty
 

@@ -66,3 +66,12 @@ print(f"Potenssiinkorotus: {potenssiinkorotus}")
 print(f"Jakolasku: {jakolasku}")
 print(f"Kokonaisosa: {kokonaisosa}")
 print(f"Jakojäännös: {jakojäännös}")
+
+# Randomi numero esimerkki
+
+luku1 = random.randint(0, 9)
+luku2 = random.randint(0, 9)
+luku3 = random.randint(0, 9)
+
+print(f"{luku1} {luku2} {luku3}")
+print(f"{random.randint(0, 9)} {random.randint(0, 9)} {random.randint(0, 9)}")
