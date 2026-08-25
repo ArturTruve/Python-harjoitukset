@@ -15,3 +15,7 @@ Tehtävät 1, 2, 3, 4, 5 ja 6 valmiita
 Ohjelmointiprojektitehtävän aloitus tehty
 
 ## Moduuli 4
+
+Tein tunnilla näytetyt esimerkit
+
+Tein tehtävät 1, 2

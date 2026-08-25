@@ -18,9 +18,9 @@ naula = (float(naulat) * 32 * 13.3)
 luoti = float(luodit) * 13.3
 
 # Muutetaan grammat kilogrammoiksi ja lasketaan grammat
-kilogrammat = int((leiviskä + naula + luoti) / 1000)
+kilogrammat = float((leiviskä + naula + luoti) // 1000)
 grammat = float((leiviskä + naula + luoti) % 1000)
 
 # Tulostetaan pyydetyllä tavalla + pyöristetään grammamäärä kahden desimaalin tarkkuuteen
 print("Massa nykymittojen mukaan: ")
-print(kilogrammat, "kilogrammaa ja", round(grammat, 2), "grammaa")
+print(f"{kilogrammat:.0f} kilogrammaa ja {grammat:.2f} grammaa")
