@@ -6,6 +6,8 @@ tuuma = 2.54
 käyttäjä = float(input("Tuumia ... joista senttimetrejä: "))
 
 while käyttäjä >= 0:
-    print(f"{tuuma * käyttäjä} centtimetriä. ")
+    print(f"{käyttäjä} tuumaa on {käyttäjä * tuuma} senttimetriä. ")
+    käyttäjä = 0
+    käyttäjä = float(input("Tuumia ... joista senttimetrejä: "))
 else:
-    print("Negatiivinen tuumien määrä. ")
+    print("En hyväksy negatiivisia lukuja. ")

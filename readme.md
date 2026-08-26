@@ -18,4 +18,8 @@ Ohjelmointiprojektitehtävän aloitus tehty
 
 Tein tunnilla näytetyt esimerkit
 
-Tein tehtävät 1, 2
+Tein tehtävät 1, 2, 3 ja 4
+
+## Moduuli 5
+
+Tein tehtävät 1, 2, 3, 4
