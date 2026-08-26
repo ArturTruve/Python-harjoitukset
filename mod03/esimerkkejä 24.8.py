@@ -1,4 +1,5 @@
 import math
+import random
 
 pisteet = 200
 pisteet = 400
