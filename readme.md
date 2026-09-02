@@ -22,6 +22,12 @@ Tein tehtävät 1, 2, 3 ja 4
 
 ## Moduuli 5
 
-Tein tehtävät 1, 2, 3, 4
+Tein tehtävät 1, 2, 3, 4, 5
 
 Tein oppitunnin esimerkit omaan python tiedostoon. 
+
+## Moduuli 6
+
+Tein oppitunnilla näytetyt esimerkit. 
+
+Tein tehtävän 2
