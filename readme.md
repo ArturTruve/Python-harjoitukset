@@ -26,6 +26,8 @@ Tein tehtävät 1, 2, 3, 4, 5
 
 Tein oppitunnin esimerkit omaan python tiedostoon. 
 
+Lisäsin peliprojektiin ohjeessa pyydetyt ominaisuudet. 
+
 ## Moduuli 6
 
 Tein oppitunnilla näytetyt esimerkit. 
