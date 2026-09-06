@@ -18,3 +18,5 @@ while counter < N:
         print("Piste on ympyrän sisällä")
 
 print(f"Pisteitä arvottu yhteensä {N}, joista ympyrän sisälle osui {n} kpl.")
+
+# Kesken. Vaatii syvempä pohdintaa. 

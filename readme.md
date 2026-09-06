@@ -32,4 +32,6 @@ Lisäsin peliprojektiin ohjeessa pyydetyt ominaisuudet.
 
 Tein oppitunnilla näytetyt esimerkit. 
 
-Tein tehtävän 2
+Tein tehtävän 1, 2, 3, 4
+
+Tehtävä 3 toimii pyydetysti mutta vähän hakusessa miten "for num in range(--> 2 <-- , luku)" saa sen toimimaan. 
