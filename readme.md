@@ -35,3 +35,9 @@ Tein oppitunnilla näytetyt esimerkit.
 Tein tehtävän 1, 2, 3, 4
 
 Tehtävä 3 toimii pyydetysti mutta vähän hakusessa miten "for num in range(--> 2 <-- , luku)" saa sen toimimaan. 
+
+## Moduuli 7
+
+Tein tunnilla näytetyt esimerkit
+
+Tein tehtävät 1, 2
