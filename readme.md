@@ -40,4 +40,8 @@ Tehtävä 3 toimii pyydetysti mutta vähän hakusessa miten "for num in range(--
 
 Tein tunnilla näytetyt esimerkit
 
-Tein tehtävät 1, 2
+Tein tehtävät 1, 2, 6
+
+## Moduuli 8
+
+Tunnin esimerkit kirjoitettu talteen
