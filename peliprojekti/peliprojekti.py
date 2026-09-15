@@ -34,3 +34,13 @@ while game_state:
 
         
 
+#######################
+# SEURAAVA VAIHE ALLA #
+#######################
+
+# Kehitä peliprojektia eteenpäin: Luo jokaiselle päävalikon toiminnolle (joita vähintään kolme) oma funktio,
+# joka suoritetaan, kun käyttäjä valitsee kyseisen toiminnon.
+
+# Yhden funktion pitää kysyä käyttäjältä asioita (esim. esine), jotka lisätään listamuuttujaan.
+# Toisen funktion pitää tulostaa listan sisältö käyttäjälle.
+# Muut toiminnot voi ideoida ja toteuttaa vapaasti.
