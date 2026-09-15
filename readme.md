@@ -45,3 +45,13 @@ Tein tehtävät 1, 2, 6
 ## Moduuli 8
 
 Tunnin esimerkit kirjoitettu talteen
+
+## Moduuli 9
+
+Tehtiin esimerkkitehtäviä. 
+
+Tehty tehtäviä 1, 2, 3 ja 4 aluilla. 
+
+## Moduuli 10
+
+Tehty esimerkki tehtäviä.

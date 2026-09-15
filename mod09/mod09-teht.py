@@ -77,9 +77,12 @@ koira2.hauku(3)
 print()
 koira3.hauku(1)
 
+
 print(f"Koiran 1 nimi on: {koira.nimi} ja rotu {koira.rotu} ja syntynyt {koira.syntymävuosi}.")
 print(f"Koiran 2 nimi on: {koira2.nimi} ja rotu {koira2.rotu} ja syntynyt {koira2.syntymävuosi}.")
-print(f"Koiran 3 nimi on: {koira3.nimi} ja rotu {koira3.rotu} ja syntynyt {koira3.syntymävuosi}.")
+print(f"Koiran 1 nimi on: {koira.nimi} ja rotu {koira.rotu} ja syntynyt {koira.syntymävuosi}.")
+print(koira)
+
 
 print(f"Koiria on nyt {Koira.tehty}")
 # print(koira) - viittaus olioon, ei muuttuja
