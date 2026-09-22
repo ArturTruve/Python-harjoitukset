@@ -57,3 +57,33 @@ koira2 = Koira("Rekku", 2022, "Viu viu viu")
 hoitola = Hoitola()
 hoitola.koirat_sisään(koira1)
 hoitola.koirat_sisään(koira2)
+
+
+#######################################
+# Maanantailta jolla olin poissa (21.9)
+
+koira1.hauku(3)
+koira2.hauku(2)
+koira2 = koira1 # viittaus ensimmäiseen koiraan poistuu ja kummatkin muuttujaat viittavat samaan olioon
+koira2.hauku(1)
+
+# Luodaan kolmas koira ja sijoitetaan se suoraan hoitolaan
+hoitola.koirat_sisään(Koira("Bella", 2016))
+
+# olion ominaisuuksiin voidaan viitata pythonissa myös suoraan
+hoitola.koirat[0].hauku(2)
+
+
+
+
+
+## Lista on myös olio ja siihen viitataan muuttujilla
+"""
+def muokkaa_listaa(muokattava_lista):
+    muokattava_lista.append(6)
+
+lista = [1,5,8]
+print(lista)
+muokkaa_listaa(lista)
+print(lista)
+"""

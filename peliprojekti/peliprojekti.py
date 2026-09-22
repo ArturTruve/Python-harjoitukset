@@ -8,10 +8,10 @@ suunta = []
 game_state = True
 
 def mitä_lisätään():
-    esine = input("Lisää esine tai kirjoita 'lopeta': ")
-    while esine.lower() != "lopeta":
+    esine = input("Lisää esine tai jätä tyhjäksi: ")
+    while esine.lower() != "":
         inventaario.append(esine)
-        esine = input("Seuraava esine jonka haluat lisätä: ")
+        esine = input("Seuraava esine, tai jätä tyhjäksi: ")
     return
 
 def inventaarion_sisältö():
@@ -20,10 +20,10 @@ def inventaarion_sisältö():
     return
 
 def kartta():
-    suuntaan = input("Menitkö: Suoraan, Vasemmalle, Oikealle?\n")
-    while suuntaan.lower() != "lopeta":
+    suuntaan = input("Menitkö: Suoraan, Vasemmalle, Oikealle?\nTai jätä tyhjäksi\n")
+    while suuntaan.lower() != "":
         suunta.append(suuntaan)
-        suuntaan = input("Mihin suuntaan seuraavaksi? Tai 'lopeta'\n")
+        suuntaan = input("Mihin suuntaan seuraavaksi?\nTai jätä tyhjäksi\n")
     return
 
 def lue_kartta():

@@ -57,3 +57,6 @@ Tehty tehtäviä 1, 2, 3 ja 4 aluilla.
 ## Moduuli 10
 
 Tehty esimerkki tehtäviä.
+
+## Moduuli 11
+
