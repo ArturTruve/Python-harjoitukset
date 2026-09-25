@@ -52,12 +52,16 @@ Tein tehtävät 1, 2
 
 Tehtiin esimerkkitehtäviä. 
 
-Tehty tehtäviä 1, 2, 3 ja 4 aluilla. 
+Tehty tehtäviä 1, 2, 3 ja 4 kesken
 
 ## Moduuli 10
 
 Tehty esimerkki tehtäviä.
 
+tehtävät 1, 2
+
 ## Moduuli 11
 
 Esimerkki tehty
+
+Tehtävät 1 ja 2

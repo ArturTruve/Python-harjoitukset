@@ -1,4 +1,4 @@
-## mod 10, Hissitehtävämallia 1->
+## mod 10, hissitehtävä 1 - 3 malli.
 
 class Hissi:
     def __init__(self, nimi, alin_kerros, ylin_kerros):

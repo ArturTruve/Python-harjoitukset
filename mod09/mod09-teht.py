@@ -126,7 +126,7 @@ class Pelaaja:
         print(f"Taso: ", self.taito_taso)
         print("Inventaario: ")
         for esine in self.inventaario:
-            print(">",esine)
+            print(f"> {esine}")
         print("----------")
         pass
 
