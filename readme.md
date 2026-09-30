@@ -65,3 +65,11 @@ tehtävät 1, 2
 Esimerkki tehty
 
 Tehtävät 1 ja 2
+
+## Moduuli 12
+
+Tehtiin esimerkki
+
+## Moduuli 13
+
+Esimerkkejä, pelaaja esimerkki
