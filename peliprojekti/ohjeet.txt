@@ -1,0 +1,6 @@
+Alla ohjeet sujuvaa pelikokemusta varten:
+
+Kun saavut päävalikkoon, voit liikkua, tutkia huoneesi, tarkistaa mitä olet löytänyt ja lopettaa pelin. 
+Liikkuessasi, voit valita mihin huoneeseen siirryt valitsemalla sen numeron listasta. 
+Tutkiessasi huonetta, voit joko kerätä löytämäsi esineen tai jättää sen. Voit kerätä sen myöhemmin. 
+Aloita antamalla nimesi ja ikäsi

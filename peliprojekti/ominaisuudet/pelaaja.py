@@ -22,7 +22,7 @@ class Pelaaja:
             valittu_huone = huoneet[valinta]
 
             if valittu_huone == self.sijainti: # Jos valittu huone sama kuin nykyinen => kirjoittaa alla olevan
-                print(f"\nOlet jo valitsemassasi huoneessa ({self.sijainti.nimi}).")
+                print(f"\nOlet jo valitsemassasi huoneessa.")
             else:
                 self.sijainti = valittu_huone # Muuten pelaajan sijainti => valittu huone. 
                 print(f"\n{self.nimi} liikkuu...")
