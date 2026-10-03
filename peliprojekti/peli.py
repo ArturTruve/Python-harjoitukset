@@ -1,4 +1,4 @@
-from ominaisuudet import Pelaaja, Huone, Esine
+from ominaisuudet import Pelaaja, Esine, Paikka
 import os
 from ominaisuudet.tallenna import tallenna_pelaaja
 
@@ -17,36 +17,34 @@ with open("peliprojekti/ohjeet.txt", "r") as ohjeet_teksti:
 # Pelaajan nimi ja hänen ikä
 print()
 nimi = input("Mikä sinun nimi on? ")
-print()
-ikä = input("Kuinka vanha olet? ")
 
 game_state = True
 
 # Luodaan huoneiden esine oliot
-esine_liivi = Esine("Liivi", 5)
-esine_miekka = Esine("Miekka", 7)
-esine_kypärä = Esine("Kypärä", 3)
-esine_aarrearkku = Esine("Aarrearkku", 28)
+eka_tulpanosa = Esine("Punaisen Tulpan", 1)
+toka_tulpanosa = Esine("Vihreän Tulpan", 2)
+kolmas_tulpanosa = Esine("Sinisen Tulpan", 3)
+neljas_tulpanosa = Esine("Keltaisen Tulpan", 4)
 
-kaikki_esineet = [esine_liivi, esine_miekka, esine_kypärä, esine_aarrearkku]
+kaikki_esineet = [eka_tulpanosa, toka_tulpanosa, kolmas_tulpanosa, neljas_tulpanosa]
 
-# Luodaan huoneet ja annetaan niille esineet
-lähtö_huone = Huone("Lähtöhuone", esine_liivi)
-toinen_huone = Huone("Toinen huone", esine_miekka)
-kolmas_huone = Huone("Kolmas huone", esine_kypärä)
-viimeinen_huone = Huone("Viimeinen huone", esine_aarrearkku)
+# Luodaan sijainnit ja annetaan niille tulpanosat
+niitty = Paikka("Niitty", eka_tulpanosa)
+metsä = Paikka("Metsä", toka_tulpanosa)
+vanha_talo = Paikka("Vanha talo", kolmas_tulpanosa)
+oja = Paikka("Oja", neljas_tulpanosa)
 
-# Lista huoneista liikkumista varten sanakirjana
-huoneet = {
-    "1": lähtö_huone,
-    "2": toinen_huone,
-    "3": kolmas_huone,
-    "4": viimeinen_huone
+# Lista paikoista liikkumista varten sanakirjana
+paikat = {
+    "1": niitty,
+    "2": metsä,
+    "3": vanha_talo,
+    "4": oja
 }
 
 # Luodaan pelaaja olio
-if os.path.exists(f"peliprojekti/{nimi}_tiedot.txt"):   # Jos pelaajan nimellinen tiedosto löytyy,
-    rivi = open(f"peliprojekti/{nimi}_tiedot.txt", "r").readlines() # luetaan se rivi kerrallaan ja käytetään tietoja pelaajaa luodessa
+if os.path.exists(f"peliprojekti/pelaajat/{nimi}_tiedot.txt"):   # Jos pelaajan nimellinen tiedosto löytyy,
+    rivi = open(f"peliprojekti/pelaajat/{nimi}_tiedot.txt", "r").readlines() # luetaan se rivi kerrallaan ja käytetään tietoja pelaajaa luodessa
     nimi = rivi[0].strip()
 
     # lukee pelaajan esineet tiedostosta ja muuttaa ne listaksi
@@ -58,21 +56,25 @@ if os.path.exists(f"peliprojekti/{nimi}_tiedot.txt"):   # Jos pelaajan nimelline
             esineet.append(e)
 
     sijainti_nimi = rivi[3].strip()
-    # Etsitään tekstimuotoiselle sijainnille vastaava Huone-olio sanakirjasta
-    for huone in huoneet.values(): # käy läpi huoneet sanakirjasta. values => käydään läpi vain arvot (Huone-oliot) eikä avaimia (1,2,3,4)
-        if huone.nimi == sijainti_nimi:
-            sijainti = huone
+    # Etsitään tekstimuotoiselle sijainnille vastaava Paikka-olio sanakirjasta
+    for paikka in paikat.values(): # käy läpi paikat sanakirjasta. values => käydään läpi vain arvot (Paikka-oliot) eikä avaimia (1,2,3,4)
+        if paikka.nimi == sijainti_nimi:
+            sijainti = paikka
 
     pelaaja = Pelaaja(nimi, esineet, sijainti) # luodaan pelaaja olio tallennettuja tietoja käyttäen
     
-    for huone in huoneet.values():
-        if huone.esine and huone.esine.nimi in esineet_nimet:
-            huone.esine = None
+    for paikka in paikat.values():
+        if paikka.esine and paikka.esine.nimi in esineet_nimet: # Jos pelaajalla on jo paikan esine, paikassa ei ole enää esinettä.
+            paikka.esine = None
 
     print(f"\nOlemassa olevat tiedot pelaajalle: {nimi} palautetaan.")
-else:
-    pelaaja = Pelaaja(nimi, [], lähtö_huone)
+    ikä = rivi[1].strip()  # Haetaan ikä tiedostosta
+else: # jos uusi pelaaja, pyydetään ikä ja luodaan pelaaja olio tyhjällä esine listalla ja sijaintina niitty
+    pelaaja = Pelaaja(nimi, [], niitty)
+    print()
+    ikä = input("Kuinka vanha olet? ")
 
+# Tästä alkaa pääohjelma
 while game_state:
     if int(ikä) < 12:
         print("Olet alaikäinen. Peli sammutetaan.")
@@ -81,14 +83,15 @@ while game_state:
         print()
         print(f"Tervetuloa {pelaaja.nimi}")
 
-        while game_state: # Valikko luuppaa kunnes pelaaja antaa komennon 4 tai lopeta
+        while game_state: # Valikko luuppaa kunnes pelaaja lopettaa pelin tai vittaa
             print()
-            print(f"Olet huoneessa: {pelaaja.sijainti.nimi}")
+            print(f"Olet paikassa: {pelaaja.sijainti.nimi}")
             print("Päävalikko: ")
             print("1. Liiku")
-            print("2. Tutki huonetta")
+            print("2. Tutki ympäristöäsi")
             print("3. Listaa esineet")
             print("4. Lopeta")
+            print("5. Kasaa tulppa (tarvitset kaikki neljä osaa)")
             komento = input("Anna komento: ")
 
             if komento.lower() == "lopeta" or komento == "4": # Lopettaa ohjelman ja tallennetaan pelaajan tiedot
@@ -101,12 +104,27 @@ while game_state:
 
             elif komento.lower() == "liiku" or komento == "1":
                 print()
-                pelaaja.liiku(huoneet) # Kutsutaan pelaajan liiku funktiota
+                pelaaja.liiku(paikat) # Kutsutaan pelaajan liiku funktiota
 
-            elif komento.lower() == "tutki huone" or komento == "2":
+            elif komento.lower() == "tutki ympäristöäsi" or komento == "2":
                 print()
                 pelaaja.kerää_esine() # Kutsutaan Pelaaja kerää-esin funktiota
 
             elif komento.lower() == "listaa esineet" or komento == "3":
                 print()
                 pelaaja.listaa_esineet() # Kutsutaan Pelaajan listaa_esieet funktio
+
+            # Kun pelaaja on kerännyt kaikki neljä tulpan osaa, peli päättyy ja pelaaja voittaa
+            elif komento.lower() == "kasaa tulppa" or komento == "5":
+                if len(pelaaja.esineet) == 4:
+                    print()
+                    with open("peliprojekti/pelaaja_voittaa.txt", "r") as loppu_teksti:
+                        print("Tallennetaan tiedot...")
+                        print()
+                        lopetus = loppu_teksti.read()
+                        print(lopetus)
+                        tallenna_pelaaja(pelaaja, ikä)
+                        game_state = False
+                else:
+                    print()
+                    print("Tulpan osia vielä puutuu. Kerää kaikki neljä osaa ennen kuin kasaat tulpan.")
