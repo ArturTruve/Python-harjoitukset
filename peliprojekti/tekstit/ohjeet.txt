@@ -3,5 +3,5 @@ Alla ohjeet sujuvaa pelikokemusta varten:
 Kun saavut päävalikkoon, voit liikkua, tutkia ympäristöäsi ja löytää tulpan osia, tarkistaa mitä olet löytänyt ja lopettaa pelin. 
 Liikkuessasi, voit valita mihin paikkaan siirryt valitsemalla sen numeron valikossa. 
 Tutkiessasi ympäristöäsi, voit joko kerätä löytämäsi osan tai jättää sen. Voit kerätä osan myöhemmin. 
-Voitat pelin, kun olet löytänyt kaikki 4 tulpan osaa ja valitset koota tulpan valikosta. 
+Voitat pelin, kun olet löytänyt 4 tulpan osaa ja valitset koota tulpan valikosta. Lisää jos käytät erikoisia osia.
 Aloita antamalla nimesi ja ikäsi

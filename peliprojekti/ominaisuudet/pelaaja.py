@@ -14,9 +14,9 @@ class Pelaaja:
                 print(f"- {esine.nimi} numero {esine.numero}")
 
 
-    def liiku(self, paikat): # Tulostaa liikkumis kohteet listan ja pelaajan valinta johtaa muutamaan tulokseen
-        print("\n1. Niitty  2. Metsä  3. Vanha talo  4. Oja")
-        valinta = input("Valitse paikan numero (1 - 4): ")
+    def liiku(self, paikat): # Tulostaa liikkumis kohteet listan ja pelaajan valinta käytetään
+        print("\n1. Niitty  2. Metsä  3. Vanha talo  4. Oja  5. Luola  6. Reikä")
+        valinta = input("Valitse paikan numero (1 - 6): ")
 
         if valinta in paikat: # Jos pelaajan valinta löytyy paikat sanakirjasta edetään
             valittu_paikka = paikat[valinta]
