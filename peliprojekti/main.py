@@ -24,6 +24,7 @@ neljas_tulpanosa = Esine("Keltaisen Tulpan", 4)
 vaihtoehtoinen_tulpanosa = Esine("Hopeisen Tulpan", 5)
 vaihtoehtoinen_tulpanosa2 = Esine("Kultaisen Tulpan", 6)
 
+# Lista myöhempää vertailua varten
 kaikki_esineet = [eka_tulpanosa, toka_tulpanosa, kolmas_tulpanosa, neljas_tulpanosa, vaihtoehtoinen_tulpanosa, vaihtoehtoinen_tulpanosa2]
 
 niitty = Paikka("Niitty", eka_tulpanosa)
@@ -125,13 +126,13 @@ while game_state:
                     on_kultainen = "Kultaisen Tulpan" in pelaajan_esineet_nimet
 
                     if on_hopeinen and on_kultainen:
-                        tiedosto = "peliprojekti/tekstit/super_voitto.txt"
+                        tiedosto = "peliprojekti/tekstit/super_voitto.txt" # kulta ja hopea löytyy
                     elif on_kultainen:
-                        tiedosto = "peliprojekti/tekstit/kultaa_voitto.txt"
+                        tiedosto = "peliprojekti/tekstit/kultaa_voitto.txt" # kulta löytyy
                     elif on_hopeinen:
-                        tiedosto = "peliprojekti/tekstit/pelaaja_voittaa_luola.txt"
+                        tiedosto = "peliprojekti/tekstit/pelaaja_voittaa_luola.txt" # hopea löytyy
                     else:
-                        tiedosto = "peliprojekti/tekstit/pelaaja_voittaa.txt"
+                        tiedosto = "peliprojekti/tekstit/pelaaja_voittaa.txt" # vain 4 normaalia
 
                     with open(tiedosto, "r") as loppu_teksti:
                         print(loppu_teksti.read())
