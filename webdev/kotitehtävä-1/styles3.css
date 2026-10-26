@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'montserrat';
     background-color: #f7f3ee;
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ body {
     text-decoration: none;
     color: #333333;
     font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'montserrat';
     display: flex;
     align-items: center;
     padding: 0 18px;
