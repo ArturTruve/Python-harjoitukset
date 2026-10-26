@@ -1,0 +1,38 @@
+      /* Kommentti */
+      body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      /* Tekstin tyylit */
+      p {
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .korosta {
+        font-weight: bold;
+        font-style: italic;
+      }
+      .punainen {
+        color: red;
+      }
+
+      a {
+        color: darkgreen;
+      }
+      a:hover {
+        font-weight: bold;
+      }
+
+      img {
+        width: 80%;
+        margin: 20px;
+      }
+
+      table td{
+        border: 2px dotted black;
+      }
+
+      footer {
+        border-top: 2px solid blue;
+        text-align: center;
+      }

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f7f3ee;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Keskellä oleva sivu-alue */
+.sivu-kontaineri {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#82a087, white);
+}
+
+/* Ylätunniste */
+.yla-palkki {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #75dfa7;
+    height: 50px;
+}
+
+/* Logo-osio */
+.site-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esivu-kuva {
+    height: 50px;
+    width: 160px;
+}
+
+/* Valikko */
+.valikko {
+    display: flex;
+    align-items: stretch;
+    padding-right: 20px;
+    gap: 60px;
+}
+
+.valikko a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    font-weight: 500;
+}
+
+/* Pääsisältö */
+.pasisalto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    justify-content: center;
+}
+
+h1 {
+    text-align: left;
+    font-size: 32px;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Osio jossa yhteystiedot ja kartta rinnakkain */
+.yhteystiedot-alue {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Vasemman puolen tekstit */
+.yhteystiedot-teksti {
+    font-size: 13px;
+    color: black;
+}
+
+.osoite {
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.yhteystiedot-laatikko {
+    margin: 0;
+    font-style: italic;
+}
+
+.yhteystiedot-laatikko strong {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Oikean puolen karttakuva */
+.map-kuva {
+    display: block;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    background-color: #3d3d3d;
+}
