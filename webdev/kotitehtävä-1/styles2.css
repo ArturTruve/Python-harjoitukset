@@ -37,7 +37,7 @@ body {
 /* logo */
 .esivu-kuva {
     height: 50px;
-    width: 160px;
+    width: 50px;
 }
 
 /* Valikko oikealla */
@@ -96,12 +96,13 @@ body {
     display: flex;
     gap: 15px;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 /* Yksittäinen tuotekortti */
 .tuote-kortti {
     flex: 1;
-    background-color: #6ccd98; /* Vaalea tausta tuotekortille */
+    background-color: #6ccd98;
     padding: 12px;
     padding-top: 20px;
     padding-bottom: 50px;
