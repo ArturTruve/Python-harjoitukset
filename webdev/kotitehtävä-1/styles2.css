@@ -10,7 +10,7 @@ body {
 
 /* Keskellä oleva sivu-alue - kiinteä 700px leveys valkoisilla reunoilla */
 .sivu-kontaineri {
-    width: 50%;
+    width: 70%;
     min-height: 100vh;
     background-color: #82a087;
     display: flex;
