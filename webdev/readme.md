@@ -4,4 +4,7 @@
 
 Tein vaatimusten mukaan verkkosivun.
 
-Palautusvaihe vielä kesken
+Palautusvaihe valmis.
+
+## Programming-assignments
+
