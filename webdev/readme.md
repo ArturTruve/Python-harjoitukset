@@ -6,6 +6,10 @@ Tein vaatimusten mukaan verkkosivun.
 
 Palautusvaihe valmis.
 
+[My link to website at users.metropolia.fi](https://users.metropolia.fi/~arturt/verkkosivu/)
+
+[My link to website test results at users.metropolia.fi](https://users.metropolia.fi/~arturt/results.html)
+
 ## Softwear 2 Programming assignments
 
 ### JS modules 1 and 2
