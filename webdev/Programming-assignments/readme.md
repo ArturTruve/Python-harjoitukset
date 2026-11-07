@@ -18,7 +18,7 @@ Completed assignments:
 
 ### JS Module 3
 
-[My link to js mod 3 folder at users.metropolia.fi](...)
+[My link to js mod 3 folder at users.metropolia.fi](https://users.metropolia.fi/~arturt/Programming-assignments/JS%20Module%203/)
 
 Completed assignments:
 
