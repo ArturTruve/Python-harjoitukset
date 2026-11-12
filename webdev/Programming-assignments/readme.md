@@ -38,12 +38,12 @@ Completed assignments:
 
 Compleated assignments: 
 
--Task 1: 2 p
--Task 2: 2 p
--Task 3: 2 p
--Task 4: 2 p
--Task 6: 1 p
--Task 7: 2 p
+- Task 1: 2 p
+- Task 2: 2 p
+- Task 3: 2 p
+- Task 4: 2 p
+- Task 6: 1 p
+- Task 7: 2 p
 
 **Total 11**
 
