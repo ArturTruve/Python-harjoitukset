@@ -34,7 +34,7 @@ Completed assignments:
 
 ### JS Module 4
 
-[My link to js mod 4 folder at users.metropolia.fi](...)
+[My link to js mod 4 folder at users.metropolia.fi](https://users.metropolia.fi/~arturt/Programming-assignments/JS%20Module%204/)
 
 Compleated assignments: 
 
